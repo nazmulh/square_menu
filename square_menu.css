@@ -138,7 +138,7 @@ body.sm-activate {
   animation-fill-mode: both;
   vertical-align: middle;
   white-space: normal;
-  text-align: left;
+  text-align: center;
 }
 
 .sm-menu .sm-nav .nav-inner.animated{
@@ -189,7 +189,9 @@ body.sm-activate {
 .sm-menu .sm-close:hover {
   color: black;
 }
-
+.nav-inner {
+  display: block !important;
+}
 .sm-menu .sm-nav .nav-inner > a{
   font-size: 36px;
   line-height: 40px;
@@ -226,13 +228,13 @@ body.sm-activate {
 }
 
 body .sm-button {
-  position: fixed;
-  top: 20px;
-  right: 20px;
   color: white;
   font-weight: bold;
   padding: 2px 5px;
-  z-index: 102;
+  position: fixed !important;
+  right: 20px !important;
+  top: 20px !important;
+  z-index: 102 !important;
 }
 
 body .sm-button:hover {
